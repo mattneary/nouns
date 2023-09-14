@@ -23,6 +23,18 @@ compute central nouns, like this:
 
 ```sh
 $ cat example.txt | poetry run python -m nouns
+[
+  {
+    "noun": "Google",
+    "score": 0.4908464955370267,
+    "intervals": [
+      [
+        3186,
+        3199
+      ]
+    ]
+  },
+  ...
 ```
 
 Or you can pass it multiple documents to compute resonance:
@@ -30,5 +42,3 @@ Or you can pass it multiple documents to compute resonance:
 ```sh
 $ poetry run python -m nouns file1.txt file2.txt
 ```
-
-The output is JSON printed to stdout.
