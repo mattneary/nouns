@@ -1,0 +1,25 @@
+WASHINGTON, Sept 14 (Reuters) - Search and advertising giant Google gave a glimpse of a main leg of its defense in court on Thursday, through data showing users happily stick with its search engine when pre-installed on their devices and quickly switch from Bing or others they like less.
+
+The Justice Department is arguing in a trial that began on Tuesday that the Alphabet (GOOGL.O) unit sought agreements with mobile carriers to win powerful default positions on smartphones to dominate search. The government argues that this antitrust trial, the biggest in decades, will determine the future of the internet.
+
+The government wrapped up questioning of Antonio Rangel, who teaches behavioral biology at the California Institute of Technology, on Thursday. Rangel argued that consumers were likely to stick with browsers on computers and mobile phones that were pre-installed as the default application.
+
+The government says Google paid $10 billion annually to wireless companies like AT&T (T.N), device makers like Apple (AAPL.O) and browser makers like Mozilla to be the default search engine to fend off rivals and keep its market share near 90%.
+
+John Schmidtlein, a lawyer for Google, during cross-examination of Rangel, pointed to instances where a significant number of user search queries went to Google even when another search engine was the default.
+
+Schmidtlein also showed an internal Microsoft document from several years ago about search use by people who carried a BlackBerry, an early smart device. Verizon BlackBerries had Bing as the default, AT&T and T-Mobile BlackBerries had Yahoo, while Sprint had Google as the default, the document showed.
+
+When users wanted to search, they turned to Google no matter the default, the document showed. Verizon BlackBerries with Bing as the default still showed 91% of searches were on Google.
+
+Google says the government is wrong to assert that Google broke the law to hold onto its massive market share. It argues that its search engine is wildly popular because of its quality, and that any payments to wireless companies or others were fair compensation for partners.
+
+The fight has major implications for Big Tech, which has been accused of buying or strangling small rivals but has defended itself by emphasizing that its services are free, as in the case of Google, or inexpensive, as in the case of Amazon.com (AMZN.O).
+
+The government alleges Google's clout in search has helped it build monopolies in some aspects of online advertising, which accounted for more than three-quarters of Google's revenue in 2022, financial statements showed.
+
+The government has also alleged that Google illegally took steps to protect communications about the payments.
+
+If Google is found to have broken the law, U.S. District Judge Amit Mehta, who is deciding the case, will then decide how to resolve it. He may order Google to stop practices he has found to be illegal or to sell assets.
+
+Previous major antitrust trials include Microsoft (MSFT.O), filed in 1998, and AT&T, filed in 1974. The AT&T breakup in 1982 is credited with paving the way for the modern cell phone industry, while the fight with Microsoft is credited with opening space for Google and others on the internet.

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nouns"
+version = "0.0.0"
+description = ""
+authors = ["Matt Neary <neary.matt@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+spacy = "^3.6.1"
+networkx = "^3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
