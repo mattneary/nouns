@@ -29,12 +29,10 @@ $ cat example.txt | poetry run python -m nouns
     "score": 0.4908464955370267,
     "intervals": [
       [
-        3186,
-        3199
-      ]
-    ]
-  },
-  ...
+        61,
+        67
+      ],
+      ...
 ```
 
 Or you can pass it multiple documents to compute resonance:
