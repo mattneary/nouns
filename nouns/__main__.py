@@ -29,7 +29,7 @@ for noun, records in noun_lookup.items():
                 'intervals': (
                     [record['intervals'] for record in records]
                     if len(records) > 1
-                    else record['intervals']
+                    else records[0]['intervals']
                 ),
             })
 
