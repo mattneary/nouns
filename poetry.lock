@@ -373,24 +373,6 @@ files = [
 ]
 
 [[package]]
-name = "networkx"
-version = "3.1"
-description = "Python package for creating and manipulating graphs and networks"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "networkx-3.1-py3-none-any.whl", hash = "sha256:4f33f68cb2afcf86f28a45f43efc27a9386b535d567d2127f8f61d51dec58d36"},
-    {file = "networkx-3.1.tar.gz", hash = "sha256:de346335408f84de0eada6ff9fafafff9bcda11f0a0dfaa931133debb146ab61"},
-]
-
-[package.extras]
-default = ["matplotlib (>=3.4)", "numpy (>=1.20)", "pandas (>=1.3)", "scipy (>=1.8)"]
-developer = ["mypy (>=1.1)", "pre-commit (>=3.2)"]
-doc = ["nb2plots (>=0.6)", "numpydoc (>=1.5)", "pillow (>=9.4)", "pydata-sphinx-theme (>=0.13)", "sphinx (>=6.1)", "sphinx-gallery (>=0.12)", "texext (>=0.6.7)"]
-extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.10)", "sympy (>=1.10)"]
-test = ["codecov (>=2.1)", "pytest (>=7.2)", "pytest-cov (>=4.0)"]
-
-[[package]]
 name = "numpy"
 version = "1.25.2"
 description = "Fundamental package for array computing in Python"
@@ -655,6 +637,74 @@ urllib3 = ">=1.21.1,<3"
 [package.extras]
 socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
+
+[[package]]
+name = "scikit-network"
+version = "0.31.0"
+description = "Graph algorithms"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "scikit-network-0.31.0.tar.gz", hash = "sha256:b26d6704ff1f8367eae7c2061b3731c33d5a25c479f9d27e11481f3c2887609e"},
+    {file = "scikit_network-0.31.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:11d392b558fe4d1cf6bfd3e00e7baec02c5b818d9d3d785fc6c46cda86ebdbe9"},
+    {file = "scikit_network-0.31.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:7a82a8ffb2275ce4df8085c778c15953388d2cc931347761e6f11897e4a8e420"},
+    {file = "scikit_network-0.31.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b3883eda659b8c3d169df6217363fec171003df80e40b654ccc087ec708b9f7d"},
+    {file = "scikit_network-0.31.0-cp310-cp310-win_amd64.whl", hash = "sha256:dd4fd65f3fedb92f1b4ba6da56ee5af2f7f493c3d8083014ac6909920828d43e"},
+    {file = "scikit_network-0.31.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:86342f1a04725f9e010493d76ad10536c5cabb671ad1a60f79de454bb1ce71ad"},
+    {file = "scikit_network-0.31.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:efd0c05395ccb1f5fa440dfe6224734a08d5c3a8bedece35e4b3ada49eef51e8"},
+    {file = "scikit_network-0.31.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4f0a4a6b56540b5970555184fca2aa280a729da43ab464207dc61c06bc7bd420"},
+    {file = "scikit_network-0.31.0-cp311-cp311-win_amd64.whl", hash = "sha256:b5865df4ce2e66fdd22ce70ed5692fc38a93fda789e5b218c42885f5232dc1e8"},
+    {file = "scikit_network-0.31.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:e090fb96af0188014beb8b06db8493e6d56b77980857ed5998735c054b341f79"},
+    {file = "scikit_network-0.31.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:69d12ec8acada5a779d4151978395569b2f2a9faec6469d1b142668d499758a5"},
+    {file = "scikit_network-0.31.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:81af2f8319662c2ddb30f73ff7a380268f91a9f480461dffe25bbdf4e4e692d5"},
+    {file = "scikit_network-0.31.0-cp38-cp38-win_amd64.whl", hash = "sha256:83001c524a4e9b114357d3049ed975df19bb01533e36106f137d8dc2f195256f"},
+    {file = "scikit_network-0.31.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:5c22c10f0952d0f815fd4cdfd215b13415560e3ce23814be099c14c8db009fdf"},
+    {file = "scikit_network-0.31.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:095387ca3229da150adcac9e56acb674ea4b3dcd704d5a55cd9eda35d227ffe0"},
+    {file = "scikit_network-0.31.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e5002c1bfb99176e78f21e6450f51ef321723e71cbb4d8a11f42e179923ce59e"},
+    {file = "scikit_network-0.31.0-cp39-cp39-win_amd64.whl", hash = "sha256:2a00ec725815eb7fd632e509f6aaf51a892090359c7c4d3286f3780133837da8"},
+]
+
+[package.dependencies]
+numpy = ">=1.22.4"
+scipy = ">=1.7.3"
+
+[[package]]
+name = "scipy"
+version = "1.9.3"
+description = "Fundamental algorithms for scientific computing in Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "scipy-1.9.3-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:1884b66a54887e21addf9c16fb588720a8309a57b2e258ae1c7986d4444d3bc0"},
+    {file = "scipy-1.9.3-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:83b89e9586c62e787f5012e8475fbb12185bafb996a03257e9675cd73d3736dd"},
+    {file = "scipy-1.9.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1a72d885fa44247f92743fc20732ae55564ff2a519e8302fb7e18717c5355a8b"},
+    {file = "scipy-1.9.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d01e1dd7b15bd2449c8bfc6b7cc67d630700ed655654f0dfcf121600bad205c9"},
+    {file = "scipy-1.9.3-cp310-cp310-win_amd64.whl", hash = "sha256:68239b6aa6f9c593da8be1509a05cb7f9efe98b80f43a5861cd24c7557e98523"},
+    {file = "scipy-1.9.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:b41bc822679ad1c9a5f023bc93f6d0543129ca0f37c1ce294dd9d386f0a21096"},
+    {file = "scipy-1.9.3-cp311-cp311-macosx_12_0_arm64.whl", hash = "sha256:90453d2b93ea82a9f434e4e1cba043e779ff67b92f7a0e85d05d286a3625df3c"},
+    {file = "scipy-1.9.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:83c06e62a390a9167da60bedd4575a14c1f58ca9dfde59830fc42e5197283dab"},
+    {file = "scipy-1.9.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:abaf921531b5aeaafced90157db505e10345e45038c39e5d9b6c7922d68085cb"},
+    {file = "scipy-1.9.3-cp311-cp311-win_amd64.whl", hash = "sha256:06d2e1b4c491dc7d8eacea139a1b0b295f74e1a1a0f704c375028f8320d16e31"},
+    {file = "scipy-1.9.3-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:5a04cd7d0d3eff6ea4719371cbc44df31411862b9646db617c99718ff68d4840"},
+    {file = "scipy-1.9.3-cp38-cp38-macosx_12_0_arm64.whl", hash = "sha256:545c83ffb518094d8c9d83cce216c0c32f8c04aaf28b92cc8283eda0685162d5"},
+    {file = "scipy-1.9.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0d54222d7a3ba6022fdf5773931b5d7c56efe41ede7f7128c7b1637700409108"},
+    {file = "scipy-1.9.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cff3a5295234037e39500d35316a4c5794739433528310e117b8a9a0c76d20fc"},
+    {file = "scipy-1.9.3-cp38-cp38-win_amd64.whl", hash = "sha256:2318bef588acc7a574f5bfdff9c172d0b1bf2c8143d9582e05f878e580a3781e"},
+    {file = "scipy-1.9.3-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:d644a64e174c16cb4b2e41dfea6af722053e83d066da7343f333a54dae9bc31c"},
+    {file = "scipy-1.9.3-cp39-cp39-macosx_12_0_arm64.whl", hash = "sha256:da8245491d73ed0a994ed9c2e380fd058ce2fa8a18da204681f2fe1f57f98f95"},
+    {file = "scipy-1.9.3-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4db5b30849606a95dcf519763dd3ab6fe9bd91df49eba517359e450a7d80ce2e"},
+    {file = "scipy-1.9.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c68db6b290cbd4049012990d7fe71a2abd9ffbe82c0056ebe0f01df8be5436b0"},
+    {file = "scipy-1.9.3-cp39-cp39-win_amd64.whl", hash = "sha256:5b88e6d91ad9d59478fafe92a7c757d00c59e3bdc3331be8ada76a4f8d683f58"},
+    {file = "scipy-1.9.3.tar.gz", hash = "sha256:fbc5c05c85c1a02be77b1ff591087c83bc44579c6d2bd9fb798bb64ea5e1a027"},
+]
+
+[package.dependencies]
+numpy = ">=1.18.5,<1.26.0"
+
+[package.extras]
+dev = ["flake8", "mypy", "pycodestyle", "typing_extensions"]
+doc = ["matplotlib (>2)", "numpydoc", "pydata-sphinx-theme (==0.9.0)", "sphinx (!=4.1.0)", "sphinx-panels (>=0.5.2)", "sphinx-tabs"]
+test = ["asv", "gmpy2", "mpmath", "pytest", "pytest-cov", "pytest-xdist", "scikit-umfpack", "threadpoolctl"]
 
 [[package]]
 name = "setuptools"
@@ -1003,4 +1053,4 @@ colorama = {version = ">=0.4.6", markers = "sys_platform == \"win32\" and python
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "c185b558588f2a4a0a63658916add143ce02c851bbcf8d7fca5aea4a4daeebad"
+content-hash = "6818d4c8fbc7c0f31200346ac59b3c0e71232febb074c1098c803ae11e245d2d"

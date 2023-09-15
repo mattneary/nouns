@@ -1,6 +1,7 @@
 import spacy
 import itertools
-import networkx as nx
+from sknetwork.ranking import Katz
+import numpy as np
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -28,8 +29,19 @@ def centrality(text):
         for phrase in noun_sets
         for edge in itertools.combinations(phrase, 2)
     ]
-    G = nx.Graph(edges)
-    central_nodes = sorted(nx.betweenness_centrality(G).items(), key=lambda x:x[1], reverse=True)
+    edge_all = list({node for edge in edges for node in edge})
+    edge_index = {node: i for i, node in enumerate(edge_all)}
+
+    adjacency = np.zeros((len(edge_index), len(edge_index)))
+    for edge in edges:
+        a = edge_index[edge[0]]
+        b = edge_index[edge[1]]
+        adjacency[a][b] = 1
+        adjacency[b][a] = 1
+
+    katz = Katz()
+    scores = katz.fit_predict(adjacency)
+    central_nodes = sorted(zip(edge_all, scores), key=lambda x:x[1], reverse=True)
 
     top_nouns = []
     for word, score in central_nodes:
